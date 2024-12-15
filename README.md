@@ -12,3 +12,26 @@ cmake版本说明v 3.31.2
 编译器和平台我使用的是msvc vs2022 v143 window11系统。其他平台和编译器我没试过。
 
 尽量使用比我版本更新的。我这是写这个demo时候最新的了。因为这是对c++新特性的支持，所以越新支持的越完善。
+
+cmake 构建编译方法：
+
+在主目录就是src所在目录建立一个build文件夹，shell 当前目录进入到build
+执行
+1. cmake ..
+2. cmake --build .
+
+在build文件下下面就会生成整个项目的vs项目文件，后续修改调试就可以在vs里面做了
+
+
+xmake 构建编译方法
+
+在主目录下shell执行 xmake build是编译代码
+在主目录下shell执行 xmake run是运行可执行文件
+
+如果想生成vs项目文件
+
+在主目录下执行命令 
+
+xmake project -k vsxmake -a x64
+
+会生成vsxmake2022文件夹，里面就有vs1项目文件，点击就可以在vs里面修改代码调试了
