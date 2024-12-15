@@ -1,2 +1,4 @@
 xmake_demo/.xmake/*
 xmake_demo/build/*
+cmake_demo/build/*
+xmake_demo/vsxmake2022/*
